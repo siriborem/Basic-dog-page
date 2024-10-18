@@ -1,0 +1,186 @@
+/*Styling for the body context*/
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    background-color: #ede4e4;
+    color: black;
+    line-height: 1.6;
+    margin:0;
+}
+/*Styling the header part*/
+header{
+    background: url(images/heroimg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+.main h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 10px 20px;
+    line-height: 1;
+    color: #582a2a;
+}
+/*Styling nav bar inside an image*/
+nav{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 20px;
+    font-size: 25px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #212020;
+    font-weight: 500;
+}
+/*Styling the about content*/
+.about{
+    background-color: rgb(239,231,231);
+    text-align: center;
+}
+.heading{
+    color: #482121;
+    font-size: 40px;
+}
+/*Styling the dogs and puppies content*/
+.mixed-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* dog img will use 3 fraction units and tips will take 1 fraction unit */
+    gap: 20px;
+    align-items: start; /* Aligns items to the top */
+}
+
+/* Flexbox for the dog cards */
+.dog-cards {
+    display: flex;
+    gap: 20px; /* Space between the cards */
+    margin-bottom: 20px;
+}
+
+.dog1, .dog2, .dog3 {
+    flex: 1;
+    /*background-color: #a39494;*/
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+.dog1 img, .dog2 img, .dog3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tips-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    grid-column: 2 / 3; /* starts on column line 2 and ends at column line 3*/
+    grid-row: 1 / span 2; /* starts on row line 1 with span 2 rows.*/
+    align-self: start; 
+    height: 95%; 
+}
+
+.tips-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tips-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.tips-section li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    list-style-type: none;
+    line-height: 1.5;
+    padding: 10px 10px;
+}
+.event-section {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    grid-column: 1 / 2; /* starts on column line 1 and ends at column line 2*/
+}
+.event-content {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.event-content p, .event-content a {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.event-content a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.event-content a:hover {
+    color: #d87e46;
+    text-decoration: underline;
+}
+/* Styling Footer*/
+footer{
+    background-color: #435d76;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+footer .item1, footer .item2 {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 0;
+    vertical-align: top;
+    text-align: left;
+}
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
